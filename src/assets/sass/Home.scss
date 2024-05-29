@@ -1,0 +1,71 @@
+.banner{
+  background-image: url('../img/banner-bg.png');
+  background-color: black;
+  padding: 8rem 0 12rem;
+  h3{
+    font-family: 'Satoshi-Regular';
+    font-size: 105px;
+  }
+  p{
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15%;
+  }
+  .btn-consult{
+    background-color: #fff;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+.trusted-by{
+margin-top: -6rem;
+padding: 3rem 3rem;
+  background-color: #181B5DC9;
+  position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+.ideas-into-digital{
+  background-color: #060b27;
+  padding: 16rem 0 0 0;
+  position: relative;
+
+  h3{
+    font-size: 63px;;
+  }
+}
+.ideas-into-digital:before{
+  background-image: url('../img/bg-line-right.png');
+  position: absolute;
+  top: 0;
+  content: '';
+  height: 750px;
+  width: 100%;
+  background-size: 85%;
+background-position:top center;
+background-repeat: no-repeat;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
