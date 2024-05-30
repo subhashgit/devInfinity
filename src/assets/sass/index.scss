@@ -56,7 +56,7 @@ body {
   font-family: 'Satoshi-Medium';
 }
 
-
+.text-right{text-align: right;}
 .gradient-text{
   background: linear-gradient(91.16deg, #9795FF 1.74%, #FFFFFF 43.71%, #FFFFFF 61.62%, #BE9FFF 102.48%);
   -webkit-background-clip: text;
@@ -82,4 +82,29 @@ code {
     border: 1px solid #fff;
     padding: 10px 20px;
 
+}
+
+.footer{
+  background-color: #0e1022;
+  padding: 5rem 0 1rem;
+  p{
+    color: #fff;
+  }
+  h5{
+    font-size: 18px;color: #fff;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      margin-top: 8px;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .social-icons{
+    gap: 15px;
+  }
 }

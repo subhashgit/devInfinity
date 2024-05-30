@@ -35,9 +35,31 @@ padding: 3rem 3rem;
   background-color: #060b27;
   padding: 16rem 0 0 0;
   position: relative;
-
+  z-index: 1;
   h3{
-    font-size: 63px;;
+    font-size: 63px;
+
+  }
+  .font-weight-light{font-weight: 300;}
+  .trans-col{
+
+div{
+background: #15151566;
+padding: 30px;
+text-align: left;
+color: #fff;
+border-radius: 20px;
+-webkit-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+-moz-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+h4{
+    margin:10px 0 ;
+  font-size: 22px;
+}
+p{
+  color: #8F9BB7;
+}
+}
   }
 }
 .ideas-into-digital:before{
@@ -50,6 +72,97 @@ padding: 3rem 3rem;
   background-size: 85%;
 background-position:top center;
 background-repeat: no-repeat;
+z-index: -1;
+}
+
+
+.sets-us-apart{
+  background-color: #060b27;
+  padding: 8rem 0 6rem 0;
+  position: relative;
+  z-index: 1;
+  h3{
+    font-size: 63px;
+
+  }
+  .font-weight-light{font-weight: 300;}
+  .trans-col{
+
+h4{
+    margin:20px 0 10px 0 ;
+  font-size: 22px;
+  color: #fff;
+}
+p{
+  color: #8F9BB7;
+}
+
+  }
+}
+.sets-us-apart:before{
+  background-image: url('../img/bg-line-left.png');
+  position: absolute;
+  top: -10rem;
+  content: '';
+  height: 670px;
+  width: 100%;
+  background-size: 85%;
+background-position:top center;
+background-repeat: no-repeat;
+z-index: -1;
+}
+
+.customers-visit{
+  background-color: #060b27;
+  padding: 4rem 0;
+  border-top:1px solid #8F9BB7 ;
+  border-bottom:1px solid  #8F9BB7 ;
+  position: relative;
+  z-index: 2;
+  h3{
+    font-size: 63px;
+    font-weight: 300;
+  }
+  p{
+    color: #aaa;  
+  }
+}
+.about-us{
+  background-color: #060b27;
+  padding: 8rem 0 6rem 0;
+  position: relative;
+  z-index: 1;
+  p{
+    color: #FFFFFF;
+  }
+}
+.about-us:before{
+  background-image: url('../img/bg-line-right.png');
+  position: absolute;
+  top:-180px;
+  content: '';
+  height: 750px;
+  width: 100%;
+  background-size: 85%;
+background-position:top center;
+background-repeat: no-repeat;
+z-index: -1;
+}
+
+.contact-form{background-color: #060b27;
+p{
+  color: #fff;
+}
+.trans-col{
+  background: #15151566;
+padding: 50px;
+text-align: left;
+color: #fff;
+border-radius: 20px;
+-webkit-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+-moz-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+}
 }
 
 

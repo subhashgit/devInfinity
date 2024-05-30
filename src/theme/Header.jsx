@@ -16,7 +16,7 @@ function Header() {
         <div className='header position-absolute w-100 mt-3'>
          <Container>
             <Row>
-                <Col md={2}><img src={logo} /></Col>
+                <Col md={2}><img src={logo} alt="Logo"/></Col>
                 <Col md={8}>
                 <Nav
                       activeKey="/home"
