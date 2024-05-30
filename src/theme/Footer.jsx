@@ -9,14 +9,11 @@ import Button from 'react-bootstrap/Button';
 
 function Footer() {
     return (
-        <ThemeProvider
-        breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-        minBreakpoint="md"
-      >
+      
         <div className='footer'>
          <Container>
             <Row>
-                <Col md={3}>
+                <Col md>
                 <img src={logo} alt="Logo"/>
                   <p className='gradient-text my-3'>Lorem ipsum dolor sit amet consectetur adipiscing elit eu</p>
                   <div className='d-flex social-icons align-items-center'>
@@ -26,7 +23,7 @@ function Footer() {
                       <a href='/'> <img src={require('./../assets/img/facebook.png')} alt="Facebook"/></a>
                   </div>
                 </Col>
-                <Col md={3}>
+                <Col md>
                   <h5>Services</h5>
                   <ul>
                     <li><a href="/">Web Development</a></li>
@@ -35,7 +32,7 @@ function Footer() {
                     <li><a href="/">Lorem</a></li>
                   </ul>
                 </Col>
-                <Col md={3}>
+                <Col md>
                 <h5>Company</h5>
                   <ul>
                     <li><a href="/">About</a></li>
@@ -43,7 +40,7 @@ function Footer() {
                     <li><a href="/">Testimonial</a></li>
                   </ul>
                 </Col>
-                <Col md={3}>
+                <Col md>
                 <h5>Links</h5>
                   <ul>
                     <li><a href="/">Privacy policy</a></li>
@@ -52,14 +49,14 @@ function Footer() {
                   </ul>
                 </Col>
             </Row>
-            <Row className='justify-content-between pt-5 text-white'>
-              <Col>© 2024 DevInfinity inc. All rights reserved.</Col>
-              <Col className='text-center'><img src={require('./../assets/img/phone.png')} alt="Linkdin"/> +91 9876543210</Col>
-              <Col className='text-right'><img src={require('./../assets/img/mail.png')} alt="Linkdin"/> contact@DevInfinity.com</Col>
+            <Row className='justify-content-between pt-5 text-white copyrights'>
+              <Col md>© 2024 DevInfinity inc. All rights reserved.</Col>
+              <Col md className='text-center'><img src={require('./../assets/img/phone.png')} alt="Linkdin"/> +91 9876543210</Col>
+              <Col md className='text-right'><img src={require('./../assets/img/mail.png')} alt="Linkdin"/> contact@DevInfinity.com</Col>
             </Row>
         </Container>
         </div>
-      </ThemeProvider>
+     
     );
   }
   export default Footer;

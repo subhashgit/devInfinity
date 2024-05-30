@@ -35,12 +35,16 @@ padding: 3rem 3rem;
   background-color: #060b27;
   padding: 16rem 0 0 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  background-image: url('../img/1bg.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   h3{
     font-size: 63px;
 
   }
-  .font-weight-light{font-weight: 300;}
+ 
   .trans-col{
 
 div{
@@ -80,7 +84,11 @@ z-index: -1;
   background-color: #060b27;
   padding: 8rem 0 6rem 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  background-image: url('../img/2bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   h3{
     font-size: 63px;
 
@@ -119,6 +127,10 @@ z-index: -1;
   border-bottom:1px solid  #8F9BB7 ;
   position: relative;
   z-index: 2;
+  background-image: url('../img/4bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   h3{
     font-size: 63px;
     font-weight: 300;
@@ -131,9 +143,17 @@ z-index: -1;
   background-color: #060b27;
   padding: 8rem 0 6rem 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  background-image: url('../img/3bg.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   p{
     color: #FFFFFF;
+  }
+  h3{
+    font-size: 63px;
+    font-weight: 300;
   }
 }
 .about-us:before{
@@ -150,6 +170,8 @@ z-index: -1;
 }
 
 .contact-form{background-color: #060b27;
+  
+
 p{
   color: #fff;
 }
@@ -162,9 +184,101 @@ border-radius: 20px;
 -webkit-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
 -moz-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
 box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+background-image: url('../img/form-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 }
 
+.contact-form{
+  position: relative;
+  z-index: 3;
+  .input-group-text{
+    background-color: #fff;
+    color: #ACB4C3;
+    padding: 0 0 0 10px;
+  }
+  h3{
+    font-size: 68px;
+  }
+  .input-group{
+      .form-control{
+          border:none;
+          padding: 0.8rem .75rem;
+      }
+  }
+  button.btn{background-color: #6440D4;
+    border: #6440D4;
+  
+  :hover{
+    background-color: #6440D4;
+    border: #6440D4;
+  }
+}
+}
+
+.testimonials{ 
+  background-color: #060b27;
+  padding: 16rem 0 10rem 0;
+  position: relative;
+  z-index: 2;
+  background-image: url('../img/quotas-bg.png');
+  background-repeat: no-repeat;
+    background-position: right;
+h3{
+  font-size: 63px;
+  text-align: center;
+  margin: 1rem 0 4rem 0;
+}
+
+.trans-col{
+  margin-bottom: 15px;
+
+  .name{
+      font-weight: 500;
+  }
+  .para{
+    font-size: 14px;
+  }
+  .col-wrap{
+  background: #15151566;
+padding: 20px;
+text-align: left;
+color: #fff;
+border-radius: 20px;
+-webkit-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+-moz-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
+position: relative;
+}
+.col-wrap::after{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  content: '';
+  background-image: url('../img/quotas.png');
+  width: 45px;
+  height: 33px;
+
+}
+}
+
+
+}
+
+.testimonials::before{
+  background-image: url('../img/bg-line-right.png');
+  position: absolute;
+  top: -2rem;
+  content: '';
+  height: 750px;
+  width: 100%;
+  background-size: 85%;
+background-position:top center;
+background-repeat: no-repeat;
+z-index: -1;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -172,13 +286,65 @@ box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
   }
 }
 
+@media(max-width:1200px)
+{
+.ideas-into-digital:before,
+.sets-us-apart:before,
+.about-us:before,
+.testimonials::before{
+  display: none;
+}
 
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width:991px)
+{
+      .banner{ 
+        h3{
+          font-size: 60px;
+        }
+      }
+      .testimonials{
+        padding: 6rem 0;
+      }
+
+      .ideas-into-digital h3, .sets-us-apart h3 , .contact-form h3, .testimonials h3, .about-us h3 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:767px)
+{
+  .banner{ 
+    padding: 8rem 0 8rem;
+    h3{
+      font-size: 40px;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .trusted-by{
+    position: relative;margin: 0;
+background-color: #060b27;  }
+.col-md{
+  margin-bottom: 15px;
+}
+.ideas-into-digital
+{
+  padding: 5rem 0 0 0;
+}
+.ideas-into-digital .trans-col div{
+  margin-bottom: 15px;
+}
+.ideas-into-digital .row.mt-4{margin-top: 0 !important;}
+.ideas-into-digital h3{margin-bottom: 30px;}
+.sets-us-apart{    padding: 4rem 0 6rem 0}
+.footer{
+.copyrights *{
+text-align: center !important;
+}
+.col-md{
+  text-align: center !important;
+}
+  .social-icons{justify-content: center;}
+}
+
 }

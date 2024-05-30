@@ -4,6 +4,10 @@ import Footer from './theme/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';  
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
+
 function Home() {
   return (
     <div className="App">
@@ -19,17 +23,17 @@ function Home() {
         <Container className='text-center'>
            <h3 className='gradient-text'>Trusted by Leading Organizations</h3>
            <Row className='mt-4'>
-            <Col sm className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/guvi.png')} alt="consult"/></Col>
-            <Col sm className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/hawmi.png')} alt="consult"/></Col>
-            <Col sm className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/farmididi.png')} alt="consult"/></Col>
-            <Col sm className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/knmn.png')} alt="consult"/></Col>
-            <Col sm className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/real-property.png')} alt="consult"/></Col>
+            <Col md className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/guvi.png')} alt="consult"/></Col>
+            <Col md className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/hawmi.png')} alt="consult"/></Col>
+            <Col md className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/farmididi.png')} alt="consult"/></Col>
+            <Col md className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/knmn.png')} alt="consult"/></Col>
+            <Col md className='d-flex justify-content-center align-items-center'><img src={require('./assets/img/real-property.png')} alt="consult"/></Col>
            </Row>
           </Container>
         </div>
 
-        <div className='ideas-into-digital'>
-        <Container className='text-center'>
+        <div className='ideas-into-digital' >
+        <Container className='text-center' id='services'>
           <h3 className='gradient-text font-weight-light'>Transforming Ideas into Digital Reality: Explore Our Services.</h3>
             <Row className='mt-4'>
               <Col  md={4}  className='align-items-center trans-col'>
@@ -132,7 +136,7 @@ function Home() {
               </Container>
               </div>
 
-              <div className='about-us'>
+              <div className='about-us' id='about'>
                 <Container>
                   <Row>
                     <Col md={6}  className='align-items-center'>
@@ -146,7 +150,7 @@ function Home() {
                 </Container>
               </div>
 
-              <div className='contact-form'>
+              <div className='contact-form'  id='contact'>
                   <Container>
                   <div className='align-items-center trans-col'>
                     <Row>
@@ -158,13 +162,144 @@ function Home() {
                             <p>Please, send us a message or give us a call. We are looking forward to hearing from you and would like to know, how we can help you.</p>
                         </Col>
                         <Col md={{ span: 6, offset: 1 }} >
+                        <Form.Label htmlFor="basic-url">Name</Form.Label>
+                        <InputGroup className="mb-3">
+                            <InputGroup.Text id="basic-addon1"><img  src={require('./assets/img/form-name.png')} className='img-fluid' alt="About us"/></InputGroup.Text>
+                              <Form.Control
+                                placeholder="Name"
+                                aria-label="name"
+                                aria-describedby="basic-addon1"
+                              />
+                          </InputGroup>
+                          <Form.Label htmlFor="basic-url">Email</Form.Label>
+                        <InputGroup className="mb-3">
+                            <InputGroup.Text id="basic-addon1"><img  src={require('./assets/img/form-email.png')} className='img-fluid' alt="About us"/></InputGroup.Text>
+                              <Form.Control
+                                placeholder="Email"
+                                aria-label="email"
+                                aria-describedby="basic-addon1"
+                              />
+                          </InputGroup>
 
+                          <Form.Label htmlFor="basic-url">Message</Form.Label>
+                        <InputGroup className="mb-3">
+                          
+                              <Form.Control
+                                placeholder="Message"
+                                aria-label="m essage"
+                                as="textarea" 
+                                aria-describedby="basic-addon1"
+                              />
+                          </InputGroup>
+                          <Form.Check // prettier-ignore
+                              type={'checkbox'}
+                              id={`i-agree`}
+                              label={`I agree to Privacy Policy and Terms of Use`}
+                            />
+                             <div className="d-grid mt-3 gap-2">
+                             <Button variant="primary" size="lg">Contact with us now</Button>
+                             </div>
                         </Col>
                         
                       </Row>
                       </div>
                   </Container>
+
               </div>
+
+              <div className='testimonials'>
+                <Container>
+                <h3 className='gradient-text font-weight-light'>What they say about us</h3>
+                    <Row>
+                   
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                      <Col  md={4}  className='align-items-center trans-col'>
+                      <div className='col-wrap'>
+
+                              <div className="d-flex gap-3">
+                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div className="ml-2">
+                                  <span className="name">Nugraha</span>
+                                    <p className="para">Fonder of Mangcoding</p>
+                                </div>
+                            </div>
+                            <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
+                           
+                      </div>
+                      </Col>
+                    </Row>
+                </Container>
+              </div>
+
 <Footer/>
     </div>
   );
