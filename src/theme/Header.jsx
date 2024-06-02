@@ -56,7 +56,7 @@ function Header() {
                 
                 </Col>
                 <Col md={2} className='d-n-m'>
-                <a className="outline-light" href='#contact' >Consult now <img src={require('./../assets/img/arrow-up-white.png')} alt="consult"/></a>
+                <a className="outline-light" href="https://wa.me/7042352490?text=Hi" target='_blank' >Consult now <img src={require('./../assets/img/arrow-up-white.png')} alt="consult"/></a>
                 </Col>
             </Row>
         </Container>

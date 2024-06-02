@@ -16,7 +16,7 @@ function Home() {
             <Container className='text-center'>
               <h3 className='gradient-text'>One stop solution for all your business needs</h3>
               <p>Rorem ipsum dolor sit amet consectetur. Gravida convallis orci ultrices non. Ultricies tempor at ut cursus mi. Aliquam sed amet vitae orci ac penatibus consectetur.</p>
-              <a href='/' className='btn-consult'>Consult now <img src={require('./assets/img/arrow-up.png')} alt="consult"/></a>
+              <a href="https://wa.me/7042352490?text=Hi" target='_blank' className='btn-consult'>Consult now <img src={require('./assets/img/arrow-up.png')} alt="consult"/></a>
             </Container>
         </div>
         <div className='trusted-by'>

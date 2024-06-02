@@ -65,19 +65,25 @@ p{
 }
 }
   }
-}
-.ideas-into-digital:before{
+
+  .container  {
+position: relative;
+  }
+  .container:before{
   background-image: url('../img/bg-line-right.png');
   position: absolute;
-  top: 0;
+  top: -40%;
+  left: 0;
   content: '';
   height: 750px;
   width: 100%;
-  background-size: 85%;
+  background-size: 100%;
 background-position:top center;
 background-repeat: no-repeat;
 z-index: -1;
 }
+}
+
 
 
 .sets-us-apart{
@@ -106,27 +112,32 @@ p{
 }
 
   }
-}
-.sets-us-apart:before{
-  background-image: url('../img/bg-line-left.png');
-  position: absolute;
-  top: -10rem;
-  content: '';
-  height: 670px;
-  width: 100%;
-  background-size: 85%;
-background-position:top center;
-background-repeat: no-repeat;
-z-index: -1;
+  .container{
+    position: relative;
+  }
+  .container:before{
+    background-image: url('../img/bg-line-left.png');
+    position: absolute;
+    top: -90%;
+    left: 0;
+    content: '';
+    height: 670px;
+    width: 100%;
+    background-size: 100%;
+  background-position:top center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  }
 }
 
+
 .customers-visit{
-  background-color: #060b27;
+  background-color: #0e1122;
   padding: 4rem 0;
   border-top:1px solid #8F9BB7 ;
   border-bottom:1px solid  #8F9BB7 ;
   position: relative;
-  z-index: 2;
+  z-index: 4;
   background-image: url('../img/4bg.png');
   background-position: center;
   background-size: cover;
@@ -146,7 +157,7 @@ z-index: -1;
   z-index: 2;
   background-image: url('../img/3bg.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   p{
     color: #FFFFFF;
@@ -155,22 +166,27 @@ z-index: -1;
     font-size: 63px;
     font-weight: 300;
   }
-}
-.about-us:before{
-  background-image: url('../img/bg-line-right.png');
-  position: absolute;
-  top:-180px;
-  content: '';
-  height: 750px;
-  width: 100%;
-  background-size: 85%;
-background-position:top center;
-background-repeat: no-repeat;
-z-index: -1;
+  .container{
+    position: relative;
+  }
+  .container:before{
+    background-image: url('../img/bg-line-right.png');
+    position: absolute;
+    top:-75%;
+    left: 0;
+    content: '';
+    height: 750px;
+    width: 100%;
+    background-size: 100%;
+  background-position:top center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  }
+  
 }
 
-.contact-form{background-color: #060b27;
-  
+.contact-form{
+ 
 
 p{
   color: #fff;
@@ -263,22 +279,26 @@ position: relative;
 
 }
 }
-
-
+.container{
+position: relative;
 }
-
-.testimonials::before{
+.container::before{
   background-image: url('../img/bg-line-right.png');
   position: absolute;
-  top: -2rem;
+  top: -60%;
+  left: 0;
   content: '';
   height: 750px;
   width: 100%;
-  background-size: 85%;
+  background-size: 100%;
 background-position:top center;
 background-repeat: no-repeat;
 z-index: -1;
 }
+
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

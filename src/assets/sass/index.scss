@@ -49,6 +49,13 @@ body {
   font-family: 'Satoshi-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #060b27 !important;
+}
+@media (min-width: 1400px) {
+
+body .container{
+  max-width: 1140px;
+}
 }
 
 *{
