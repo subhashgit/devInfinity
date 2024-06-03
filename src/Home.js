@@ -124,13 +124,13 @@ function Home() {
               <Col  md={4}className='align-items-center'>
              
                 <h3 className='gradient-text font-weight-light'>92%</h3>
-                <p>Customers visit Devinfinity every month to get their service done.</p>
+                <p>Satisfaction rate comes from our awesome customers.</p>
               </Col>
               <Col  md={4}className='align-items-center'>
              
             
              <h3 className='gradient-text font-weight-light'>4.9/5.0</h3>
-             <p>Customers visit Devinfinity every month to get their service done.</p>
+             <p>Average customer ratings we have got all over internet.</p>
            </Col>
               </Row>
               </Container>
@@ -230,10 +230,10 @@ function Home() {
                       <div className='col-wrap'>
 
                               <div className="d-flex gap-3">
-                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div> <img src={require('./assets/img/Alex.png')} alt="consult" width="50" className="rounded-circle"/></div>
                                 <div className="ml-2">
-                                  <span className="name">Nugraha</span>
-                                    <p className="para">Fonder of Mangcoding</p>
+                                  <span className="name">Alex jounky</span>
+                                    <p className="para">Fonder of Robs </p>
                                 </div>
                             </div>
                             <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
@@ -244,10 +244,10 @@ function Home() {
                       <div className='col-wrap'>
 
                               <div className="d-flex gap-3">
-                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div> <img src={require('./assets/img/Chelsia.png')} alt="consult" width="50" className="rounded-circle"/></div>
                                 <div className="ml-2">
-                                  <span className="name">Nugraha</span>
-                                    <p className="para">Fonder of Mangcoding</p>
+                                  <span className="name">Chelsia alexy</span>
+                                    <p className="para">Fonder of Frank</p>
                                 </div>
                             </div>
                             <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
@@ -258,10 +258,10 @@ function Home() {
                       <div className='col-wrap'>
 
                               <div className="d-flex gap-3">
-                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div> <img src={require('./assets/img/Samsul.png')} alt="consult" width="50" className="rounded-circle"/></div>
                                 <div className="ml-2">
-                                  <span className="name">Nugraha</span>
-                                    <p className="para">Fonder of Mangcoding</p>
+                                  <span className="name">Samsul Afroy</span>
+                                    <p className="para">Full Stack Development</p>
                                 </div>
                             </div>
                             <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
@@ -272,10 +272,10 @@ function Home() {
                       <div className='col-wrap'>
 
                               <div className="d-flex gap-3">
-                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div> <img src={require('./assets/img/Purwa.png')} alt="consult" width="50" className="rounded-circle"/></div>
                                 <div className="ml-2">
-                                  <span className="name">Nugraha</span>
-                                    <p className="para">Fonder of Mangcoding</p>
+                                  <span className="name">Purwa Adi Twingkiwingki</span>
+                                    <p className="para">UI/UX Designer</p>
                                 </div>
                             </div>
                             <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
@@ -286,10 +286,10 @@ function Home() {
                       <div className='col-wrap'>
 
                               <div className="d-flex gap-3">
-                                <div> <img src={require('./assets/img/Nugraha.png')} alt="consult" width="50" className="rounded-circle"/></div>
+                                <div> <img src={require('./assets/img/Rizwan.png')} alt="consult" width="50" className="rounded-circle"/></div>
                                 <div className="ml-2">
-                                  <span className="name">Nugraha</span>
-                                    <p className="para">Fonder of Mangcoding</p>
+                                  <span className="name">Rizwan Gusnajmi</span>
+                                    <p className="para">Web Developer</p>
                                 </div>
                             </div>
                             <span className="maintxt">Mangcoding is a biggest company in Indonesia, who provides the services in Development Website, Shopify and Wordpress</span>                            
