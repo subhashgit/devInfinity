@@ -107,7 +107,7 @@ code {
     color: #fff;
   }
   h5{
-    font-size: 18px;color: #fff;font-weight: 500;
+    font-size: 18px;color: #fff;font-weight: 600;
   }
   ul{
     list-style: none;
@@ -124,6 +124,42 @@ code {
   .social-icons{
     gap: 15px;
   }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+ .cookies-privacy{
+ .privacy-wrapper {
+    display: flex;
+    padding: 15px 15px;
+    gap: 15px;
+    background: #0e1122;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    border-top: 1px solid;
+  }
+  button{
+    white-space: nowrap;  
+    white-space: nowrap;
+    height: 40px;
+    border-color: #6440D4;
+    color: #fff;
+  }
+  .accept{
+    background-color: #6440D4;
+  }
+  .reject{
+    background-color: transparent;
+    border: 1px solid #fff;
+    
+
+  }
+}
+}
+.logo{
+  width: 180px;
 }
 .navbar-brand{display: none;}
 @media(max-width:1200px)
@@ -138,5 +174,14 @@ code {
   .col-8{width: 100% !important;}
   .navbar-expand-lg .navbar-collapse{justify-content: end !important;}
     .navbar-nav  {background-color: #0e1022;}
+  }
+}
+
+@media(max-width:480px){
+  .footer .cookies-privacy .privacy-wrapper{
+    display: block;
+  }
+  .footer .cookies-privacy .accept{
+    margin-right: 20px;
   }
 }

@@ -72,7 +72,7 @@ position: relative;
   .container:before{
   background-image: url('../img/bg-line-right.png');
   position: absolute;
-  top: -40%;
+  top: -55%;
   left: 0;
   content: '';
   height: 750px;
@@ -118,7 +118,7 @@ p{
   .container:before{
     background-image: url('../img/bg-line-left.png');
     position: absolute;
-    top: -90%;
+    top: -84%;
     left: 0;
     content: '';
     height: 670px;
@@ -223,6 +223,11 @@ background-image: url('../img/form-bg.png');
           border:none;
           padding: 0.8rem .75rem;
       }
+      .form-control:focus,.form-control:active,.form-control:hover
+{
+  outline: none;
+  box-shadow: none;
+}
   }
   button.btn{background-color: #6440D4;
     border: #6440D4;
@@ -258,7 +263,7 @@ h3{
     font-size: 14px;
   }
   .maintxt{
-    color: #dddddd;
+    color: #dddddd; 
   }
   .col-wrap{
   background: #15151566;
@@ -311,10 +316,10 @@ z-index: -1;
 
 @media(max-width:1200px)
 {
-.ideas-into-digital:before,
-.sets-us-apart:before,
-.about-us:before,
-.testimonials::before{
+.ideas-into-digital .container:before,
+.sets-us-apart .container:before,
+.about-us .container:before,
+.testimonials .container::before{
   display: none;
 }
 
