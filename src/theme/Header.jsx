@@ -5,18 +5,20 @@ import Col from 'react-bootstrap/Col';
 import logo from '../assets/img/logo.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link, withRouter } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
-
-function Header() {
+function Header(props) {
     return (
         <ThemeProvider
         breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         minBreakpoint="md"
       >
-        <div className='header position-absolute w-100 mt-3'>
+         <ScrollToTop />
+        <div className='header position-absolute w-100 mt-2'>
          <Container>
-            <Row>
-                <Col md={2}><img src={logo} alt="Logo"/></Col>
+            <Row className='align-items-center'>
+                <Col md={2}><Link to="/"><img src={logo} className='img-fluid' alt="Logo"/></Link></Col>
                 <Col md={8}>
 
                 <Navbar collapseOnSelect expand="lg">
@@ -26,22 +28,22 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav  " className='justify-content-center'>
         <Nav
-                      activeKey="/home"
+                      activeKey="/"
                     >
                       <Nav.Item>
-                        <Nav.Link href="/home" >Home</Nav.Link>
+                        <Nav.Link href="/" >Home</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link href='#about' eventKey="link-1">About</Nav.Link>
+                        <Nav.Link href='/#about' eventKey="link-1">About</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link href='#services' eventKey="link-2">Services</Nav.Link>
+                        <Nav.Link href='/#services' eventKey="link-2">Services</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link href='#contact' eventKey="link-2">Contact us </Nav.Link>
+                        <Nav.Link href='/#contact' eventKey="link-2">Contact us </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link href='#portfolios' eventKey="link-2">Portfolio</Nav.Link>
+                        <Nav.Link href='/#partners' eventKey="link-2">Portfolio</Nav.Link>
                       </Nav.Item>
                       
                     </Nav>

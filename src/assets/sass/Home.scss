@@ -1,6 +1,7 @@
 .banner{
-  background-image: url('../img/banner-bg.png');
+  background-image: url('../img/banner-bg.jpeg');
   background-color: black;
+  background-size: cover;
   padding: 8rem 0 12rem;
   h3{
     font-family: 'Satoshi-Regular';
@@ -29,11 +30,20 @@ padding: 3rem 3rem;
   position: absolute;
     width: 100%;
     z-index: 9;
+    .equal-spc{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      img{
+        max-width: 120px;
+      }
+    }
 }
 
 .ideas-into-digital{
   background-color: #060b27;
-  padding: 16rem 0 0 0;
+  padding: 14rem 0 6rem 0;
   position: relative;
   z-index: 2;
   background-image: url('../img/1bg.png');
@@ -50,7 +60,7 @@ padding: 3rem 3rem;
 div{
 background: #15151566;
 padding: 30px;
-text-align: left;
+text-align: center;
 color: #fff;
 border-radius: 20px;
 -webkit-box-shadow: -0.3px -0.3px 0px 0.2px rgba(255,255,255,1);
@@ -88,7 +98,7 @@ z-index: -1;
 
 .sets-us-apart{
   background-color: #060b27;
-  padding: 8rem 0 6rem 0;
+  padding:6rem 0;
   position: relative;
   z-index: 2;
   background-image: url('../img/2bg.png');
@@ -152,7 +162,7 @@ p{
 }
 .about-us{
   background-color: #060b27;
-  padding: 8rem 0 6rem 0;
+  padding: 6rem 0;
   position: relative;
   z-index: 2;
   background-image: url('../img/3bg.png');
@@ -223,7 +233,7 @@ background-image: url('../img/form-bg.png');
           border:none;
           padding: 0.8rem .75rem;
       }
-      .form-control:focus,.form-control:active,.form-control:hover
+      .form-control:focus,.form-control:active,.form-control:hover, button
 {
   outline: none;
   box-shadow: none;
@@ -237,11 +247,12 @@ background-image: url('../img/form-bg.png');
     border: #6440D4;
   }
 }
+.input-group-text{    border-radius: 5px 0 0 5px;}
 }
 
 .testimonials{ 
   background-color: #060b27;
-  padding: 16rem 0 10rem 0;
+  padding: 6rem 0;
   position: relative;
   z-index: 2;
   background-image: url('../img/quotas-bg.png');
@@ -307,6 +318,12 @@ z-index: -1;
 
 }
 
+.ideas-into-digital .container:before,
+.sets-us-apart .container:before,
+.about-us .container:before,
+.testimonials .container::before{
+  display: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -339,6 +356,17 @@ z-index: -1;
       .ideas-into-digital h3, .sets-us-apart h3 , .contact-form h3, .testimonials h3, .about-us h3 {
         font-size: 40px;
     }
+
+
+
+    .trusted-by{
+    .equal-spc{
+            gap: 5%;
+            img{
+              max-width: 80px;
+            }
+          }
+      }
 }
 
 @media(max-width:767px)
@@ -349,6 +377,18 @@ z-index: -1;
       font-size: 40px;
     }
   }
+
+  
+  .trusted-by{
+    .equal-spc{
+      flex-direction: column;
+            gap: 20px;
+            img{
+              max-width: 120px;
+            }
+          }
+      }
+      
   .trusted-by{
     position: relative;margin: 0;
 background-color: #060b27;  }
@@ -364,7 +404,7 @@ background-color: #060b27;  }
 }
 .ideas-into-digital .row.mt-4{margin-top: 0 !important;}
 .ideas-into-digital h3{margin-bottom: 30px;}
-.sets-us-apart{    padding: 4rem 0 6rem 0}
+.sets-us-apart{    padding:6rem 0}
 .footer{
 .copyrights *{
 text-align: center !important;
